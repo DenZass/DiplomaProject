@@ -1,0 +1,21 @@
+
+
+@import url(./question__link/question__link.css);
+@import url(./question__title/question__title.css);
+@import url(./question__score/question__score.css);
+
+.question{
+    padding: 120px 0 80px 104px;
+}
+@media (min-width:767px) and (max-width:1025px){
+    .question{
+        padding: 96px 0 40px 40px;
+    }
+}
+@media (max-width:766px){
+    .question{
+        padding: 75px 16px 24px 16px;
+    }
+}
+
+

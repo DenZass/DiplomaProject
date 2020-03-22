@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Анализатор новостей">
+    <meta name="author" content="Загородний Даниил">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <link rel="icon" href="./image/favi1.png" type="image/x-icon">
+    <title>NewsAnalyzer</title>
+</head>
+<body>
+    <div class="root">
+        <div class="header">
+            <span class="header__title">NewsAnalyzer</span>
+            <span class="header__link">  
+                <span class="link__main">Главная</span>
+                <span class="link__aboutproject link__aboutproject_search"><a href="./about.html">О проекте</a></span>
+                <div class="header__line"></div>
+            </span>
+        </div>
+        <div class="search">
+            <!-- <img src="./image/main-bg-phone.png" class="search__image search__image_one"  alt="Фоновая картинка - новостная лента в смартфоне"> -->
+            <!-- <img src="./image/georgia-de-lotz--UsJoNxLaNo-unsplash.png" class="search__image search__image_two"  alt="Фоновая картинка - новостная лента в смартфоне"> -->
+            <!-- <img src="./image/georgia-mini.png" class="search__image search__image_three"  alt="Фоновая картинка - новостная лента в смартфоне"> -->
+
+            <div class="search__search">
+                <h1 class="search__title">Что в мире творится?</h1>
+                <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+                <div class="search__string">
+                    <input class="string__input" type="text" placeholder="Природа">
+                    <button class="string__button">Искать</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="resultsearch">
+            <div class="resultsearch__title">
+                <h3 class="title__name">Результаты поиска</h3>
+                <a class="title__view-analytics" href="./analytics.html">Посмотреть аналитику   <span>&#8250;</span></a>
+            </div> 
+
+            <div class="resultsearch__content ">
+                <div class="content__card">
+                    <!-- <div class="card__image"></div> -->
+                    <img src="./image/image_04.png" class="card__image" alt="Картинка">
+                    <div class="card__text">
+                        <span class="text__date">2 августа, 2019</span>
+                        <h3 class="text__title">Национальное достояние – парки</h3>
+                        <p class="text__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                        <span class="text__source">Дзен</span>
+                    </div>
+                </div>
+                <div class="content__card">
+                    <!-- <div class="card__image"></div> -->
+                    <img src="./image/image_04.png" class="card__image" alt="Картинка">
+                    <div class="card__text">
+                        <span class="text__date">2 августа, 2019</span>
+                        <h3 class="text__title">Национальное достояние – парки</h3>
+                        <p class="text__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь  jhjhsds складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                        <span class="text__source">Дзен</span>
+                    </div>
+                </div>
+                <div class="content__card">
+                    <!-- <div class="card__image"></div> -->
+                    <img src="./image/image_04.png" class="card__image" alt="Картинка">
+                    <div class="card__text">
+                        <span class="text__date">2 августа, 2019</span>
+                        <h3 class="text__title">Национальное достояние – парки</h3>
+                        <p class="text__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                        <span class="text__source">Дзен</span>
+                    </div>
+                </div>
+                <div class="content__card">
+                    <!-- <div class="card__image"></div> -->
+                    <img src="./image/image_04.png" class="card__image" alt="Картинка">
+                    <div class="card__text">
+                        <span class="text__date">2 августа, 2019</span>
+                        <h3 class="text__title">Национальное достояние – парки</h3>
+                        <p class="text__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                        
+                    </div>
+                    <span class="text__source">Дзен</span>
+                </div>
+            </div>
+
+            <div class="resultsearch__button">
+                <button class="button__showmore">Показать еще</button>
+            </div>
+        </section>
+
+        <section class="aboutauthor">
+            <div class="aboutauthor__image">
+                <img class="image__author" src="./image/image-03.png" alt="Автор">
+            </div>
+            <div class="aboutauthor__textcontent">
+                <h3 class="textcontent__title">Об авторе</h3>
+                <p class="textcontent__subtitle">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.</p>
+                <p class="textcontent__subtitle">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам. Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+            </div>
+        </section>
+
+        <section class="footer">
+            <span class="footer__protection">&#169; 2019  Supersite</span>
+            <div class="footer_link">
+                <span><a href="./index.html">Главная</a></span>
+                <span><a href="./about.html">О проекте</a></span>
+                <span>Яндекс.Практикум</span>
+            </div>
+            <div class="footer__icon">
+                <img class="icon__github" src="./image/Vector.png" alt="">
+                <img class="icon__fb" src="./image/fb.png" alt="">
+            </div>
+            
+        </section>
+
+    </div>
+    
+
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
+</body>
+</html>

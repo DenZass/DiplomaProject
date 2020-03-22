@@ -1,0 +1,26 @@
+
+@import url(./search__title/search__title.css);
+@import url(./search__subtitle/search__subtitle.css);
+@import url(./search__string/search__string.css);
+@import url();
+@import url();
+
+
+
+.search__search{
+    width: 700px;
+    padding:0 0 77px 90px;
+    /* z-index: 1; */
+}
+
+@media (min-width:767px) and (max-width:1025px){
+    .search__search{
+        padding-left: 160px;
+        padding-bottom: 0;
+    }
+}
+@media (max-width:766px){
+    .search__search{
+        padding: 0 12px 0 18px;
+    }
+}

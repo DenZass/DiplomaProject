@@ -1,0 +1,29 @@
+
+
+.forcustomers{
+    max-width: 815px;
+    padding: 160px 0 94px 104px;
+}
+@media (min-width:767px) and (max-width:1025px){
+    .forcustomers{
+        max-width: 688px;
+        padding: 100px 0 60px 40px;
+    }
+    .forcustomers .textcontent__subtitle{
+        margin-top: 24px;
+    }
+    .forcustomers .textcontent__subtitle:first-of-type{
+        margin-top: 0;
+    }
+}
+@media (max-width:766px){
+    .forcustomers{
+        padding: 75px 16px 44px 16px;
+    }
+    .forcustomers .textcontent__title{
+        margin: 0;
+    }
+    .forcustomers .textcontent__subtitle{
+        margin-top: 24px;
+    }
+}

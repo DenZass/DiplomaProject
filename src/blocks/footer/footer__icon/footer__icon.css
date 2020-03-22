@@ -1,0 +1,11 @@
+
+
+.footer__icon>img:first-child{
+    margin-right: 28px;
+}
+@media (max-width:766px){
+   .footer__icon{
+       position: relative;
+       top: 14px;
+   }
+}

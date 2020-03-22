@@ -1,0 +1,103 @@
+
+/* таблица */
+.analyticsday__analytics{
+    padding: 48px 0 0 0;
+}
+.analytics_gray{
+    color: #B6BCBF;
+    font-size: 12px;
+    line-height: 16px; 
+}
+/* .analytics__header{} */
+.analytics__header span:first-of-type{
+    padding-right: 100px;
+}
+/* .analytics__month{} */
+.analytics__band{
+    width: 99%;
+    /* max-width: 1232; */
+    border: 2px solid #B6BCBF;
+    margin: 16px 0;
+    background-color: #B6BCBF;
+}
+.analytics__scale{
+    display: flex;
+    justify-content: space-between;
+}
+/* .analytics__scale span{
+    /* padding-right: calc((100%-140px)/4); */
+    /* margin-right: 20%; */
+    /* padding: 0 calc((100vw / 100px) * 1vw); */
+    /* padding: 0 16.4vw 0 0; */
+    /* padding-right: 16.4wv; */
+/* }  */
+.analytics__scale span:first-of-type{
+    padding-left: 135px;
+}
+.analytics__scale span:last-of-type{
+    padding-right: 0;
+}
+
+/* ползунки */
+/* .dia{
+    width: 100%;
+    background-color: red;
+} */
+.sliders__item{ 
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+/* .sliders__item>span */
+.item__date{
+    padding-right: 90px;
+    font-size: 18px;
+    line-height: 80px;
+}
+.item__block{
+    width: 100%;
+}
+/* .sliders__item> div{ */
+    .block__indicator{
+    /* position: relative; */
+    width: 50%;
+    height: 24px;
+    background-color: #2F71E5;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 16px;
+}
+/* .sliders__item>.dia>.aa{
+    width: 20%;
+    height: 24px;
+    background-color:#2F71E5;
+} */
+/* .sliders__item div span{ */
+.indicator__num{
+    color: #fff; 
+    padding-left: 5px;
+}
+
+@media (min-width:767px) and (max-width:1025px){
+    
+}
+@media (max-width:766px){ 
+    .analyticsday__analytics{
+        padding: 16px 0 0 0;
+    }
+    .analytics__header span:first-of-type{
+        padding-right: 44px;
+    }
+    .analytics__band{
+        margin: 8px 0;
+    }
+    .analytics__scale{
+        display: none;
+    }
+    .item__date{
+        padding-right: 35px;
+        font-size: 18px;
+        line-height: 48px;
+    }
+}

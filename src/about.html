@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Анализатор новостей">
+    <meta name="author" content="Загородний Даниил">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <link rel="icon" href="./image/favi1.png" type="image/x-icon">
+    <title>NewsAnalyzer</title>
+</head>
+<body>
+    <div class="root">
+        <div class="header header_about">
+            <span class="header__title">NewsAnalyzer</span>
+            <span class="header__link">  
+                <span class="link__main link__main_about"><a href="./index.html">Главная</a></span>
+                <span class="link__aboutproject">О проекте</span>
+                <div class="header__line header__line_aboutproject"></div>
+            </span>
+        </div>
+        
+        <section class="forcustomers">
+            <h1 class="textcontent__title">Клиентам</h1>
+            <p class="textcontent__subtitle">Этот сайт — дипломный проект студента Яндкс.Практикума. Его цель — показать, чему научился студент, и какими технологиями владеет.</p>
+            <p class="textcontent__subtitle">Вёртска сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциальность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+            <p class="textcontent__subtitle">Карточки с новостям приходят с сервера и обрабатываются асихронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+            <p class="textcontent__subtitle">При создании проекта была использона сборка технологией Webpack. Это современных подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также настроена сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем у них не будет проблем с отображением. А значит потенциальная аудитория возрастает.</p>
+            <p class="textcontent__subtitle">Проект был проверен экспертами Яндекс.Практикума. И если вашему бизесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+        </section>
+
+        <section class="technologies"> 
+            
+            <h3 class="textcontent__title technologies__title">Используемые технологии</h3>
+            
+            <div class="technologies__content">
+                <div class="content__list">
+                    <div class="list__item">
+                        <span class="item__name">HTML</span>
+                        <img class="item__image" src="./image/html.png" alt="Html">
+                    </div>
+    
+                    <div class="list__item">
+                        <span class="item__name">CSS</span>
+                        <img class="item__image" src="./image/css.png" alt="Html">
+                    </div>
+    
+                    <div class="list__item">
+                        <span class="item__name">Java Script</span>
+                        <img class="item__image" src="./image/js.png" alt="Html">
+                    </div>
+    
+                    <div class="list__item">
+                        <span class="item__name">Webpack</span>
+                        <img class="item__image" src="./image/webpack.png" alt="Html">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutauthor">
+            <div class="aboutauthor__image">
+                <img class="image__author" src="./image/image-03.png" alt="Автор">
+            </div>
+            <div class="aboutauthor__textcontent">
+                <h3 class="textcontent__title">Об авторе</h3>
+                <p class="textcontent__subtitle">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владете.</p>
+                <p class="textcontent__subtitle">Tакже можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам. Если хотите, оставьте свои контакты: email и телефон. Так заказчики смогут с вами связаться.</p>
+            </div>
+        </section>
+
+        <section class="historycommit">
+            <div class="resultsearch__title historycommit__title">
+                <h3 class="title__name title__name_historycommit">История коммитов из GitHub</h3>
+                <a class="title__view-analytics title__view-analytics_historycommit" href="">Открыть в  Github   <span>&#8250;</span></a>
+            </div>
+            <div class="historycommit__content">
+                <div class="content__card content__card_historycommit">
+                    <!-- <div class="card__image"></div> -->
+                    <!-- <img src="./image/image_04.png" class="card__image" alt="Картинка"> -->
+                    <div class="card__text card__text_historycommit">
+                        <span class="text__date">2 августа, 2019</span>
+                        <div class="text__box">
+                            <img class="box__image" src="./image/fedorova.png" alt="">
+                            <div class="box__title">
+                                <h3 class="text__title title__header">Мария Фёдорова</h3>
+                                <span class="title__email">anton@yandex.ru</span>
+                            </div>
+                        </div>
+                        <p class="text__subtitle">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                        <!-- <span class="text__source">Дзен</span> -->
+                    </div>
+                </div>
+
+                <div class="content__card content__card_historycommit">
+                    <!-- <div class="card__image"></div> -->
+                    <!-- <img src="./image/image_04.png" class="card__image" alt="Картинка"> -->
+                    <div class="card__text">
+                        <span class="text__date">2 августа, 2019</span>
+                        <div class="text__box">
+                            <img class="box__image" src="./image/fedorova.png" alt="">
+                            <div class="box__title">
+                                <h3 class="text__title title__header">Мария Фёдорова</h3>
+                                <span class="title__email">anton@yandex.ru</span>
+                            </div>
+                        </div>
+                        <p class="text__subtitle">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                        <!-- <span class="text__source">Дзен</span> -->
+                    </div>
+                </div>
+
+                <div class="content__card content__card_historycommit">
+                    <!-- <div class="card__image"></div> -->
+                    <!-- <img src="./image/image_04.png" class="card__image" alt="Картинка"> -->
+                    <div class="card__text">
+                        <span class="text__date">2 августа, 2019</span>
+                        <div class="text__box">
+                            <img class="box__image" src="./image/fedorova.png" alt="">
+                            <div class="box__title">
+                                <h3 class="text__title title__header">Мария Фёдорова</h3>
+                                <span class="title__email">anton@yandex.ru</span>
+                            </div>
+                        </div>
+                        <p class="text__subtitle">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                        <!-- <span class="text__source">Дзен</span> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="historycommit__points">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="historycommit__button">
+                <a href="">
+                    <button class="button__opengithub button__showmore">Открыть в GitHub</button>
+                </a>
+            </div>
+        </section>
+
+        <section class="footer">
+            <span class="footer__protection">&#169; 2019  Supersite</span>
+            <div class="footer_link">
+                <span><a href="./index.html">Главная</a></span>
+                <span><a href="./about.html">О проекте</a></span>
+                <span>Яндекс.Практикум</span>
+            </div>
+            <div class="footer__icon">
+                <img class="icon__github" src="./image/Vector.png" alt="">
+                <img class="icon__fb" src="./image/fb.png" alt="">
+            </div>
+        </section>
+
+    </div>
+    
+
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+
+.question__title{
+    margin: 80px 0 25px 0;
+}
+@media (min-width:767px) and (max-width:1025px){
+    .question__title{
+        /* font-size: 32px;
+        line-height: 34px; */
+        margin: 64px 0 24px 0;
+    }
+}
+@media (max-width:766px){
+    .question__title{
+        margin: 0; 
+    }
+}

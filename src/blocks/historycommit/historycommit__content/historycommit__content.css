@@ -1,0 +1,99 @@
+
+
+.historycommit__content{
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* карточка */
+.content__card_historycommit{
+    max-height: 288px;
+    margin: 0 8px;
+}
+.text__box{
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+}
+/* .box__image{
+    width: 64px;
+    height: 64px;
+} */
+.box__title{
+    margin-left: 16px;
+}
+.title__header{
+    margin: 5px 0;
+}
+.title__email{
+    font-size: 14px;
+    line-height: 22px;
+}
+@media (min-width:767px) and (max-width:1025px){
+    .historycommit__content{
+        padding: 0 40px;
+        justify-content: center;
+    }
+    .content__card_historycommit{
+        width: 336px;
+        height: 242px;
+    }
+    .content__card_historycommit:last-of-type{
+        display: none;
+    }
+    .card__text_historycommit{
+        padding: 24px;
+    }
+    .text__date{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .box__image{
+        width: 46px;
+    }
+    .box__title{
+        margin-left: 12px;
+    }
+    .title__header{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+@media (max-width:766px){
+    .historycommit__content{
+        /* width: 288px; */
+        /* height: 264px; */
+        padding: 0;
+    }
+    .content__card_historycommit{
+        height: 264px;
+        margin: 0;
+    }
+    .content__card_historycommit:first-of-type{
+        display: none;
+    }
+    .content__card_historycommit:last-of-type{
+        display: none;
+    }
+    
+    .card__text_historycommit{
+        width: 288px;
+        margin: 0;
+        padding: 24px;
+    }
+    .text__date{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .box__image{
+        width: 46px;
+    }
+    .box__title{
+        margin-left: 12px;
+    }
+    .title__header{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,14 @@
+
+
+.question__score p{
+    margin: 5px 0 0 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+.question__score p span{
+    font-family: 'roboto-bold';
+    /* font-weight: bold; */
+}
+@media (min-width:767px) and (max-width:1025px){
+    
+}

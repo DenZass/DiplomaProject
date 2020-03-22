@@ -1,0 +1,36 @@
+
+
+.technologies__content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content__list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.list__item{
+    display: flex;
+    flex-direction: column;
+    margin: 0 35px;
+
+}
+.item__name{
+    text-align: center;
+}
+@media (min-width:767px) and (max-width:1025px){
+    .technologies__content{
+        height: 253px;
+        align-items: center;
+    }
+}
+@media (max-width:766px){
+    .technologies__content{
+        padding: 40px 0 52px 0;
+    }
+    .list__item{
+        margin: 0 12px;
+    }
+}
