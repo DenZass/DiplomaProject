@@ -13,19 +13,19 @@ body {
     width: 100%;
     max-width: 1440px;
     color: #1A1B22;
-    font-family: 'roboto-regular';
+    font-family: 'roboto-regular', sans-serif, Arial;
     letter-spacing: 0.2px;
     /* font-family: 'roboto-medium'; */
 
 }
 h1{
-    font-family: 'robotoslab-regular';  
+    font-family: 'robotoslab-regular', sans-serif, Arial;  
 }
 h3{
-    font-family: 'robotoslab-regular';
+    font-family: 'robotoslab-regular', sans-serif, Arial;
 }
 h4{
-    font-family: 'robotoslab-regular';
+    font-family: 'robotoslab-regular', sans-serif, Arial;
 }
 a{
     color: #1A1B22;
@@ -36,7 +36,7 @@ a{
 button{
     font-size: 18px;
     line-height: 24px;
-    font-family: 'roboto-bold';
+    font-family: 'roboto-bold', sans-serif, Arial;
     /* cursor: url('./image/Pointer.png'), pointer; */
     cursor: url('./image/lapka.svg'), pointer;
 
