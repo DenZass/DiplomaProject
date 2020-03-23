@@ -1048,6 +1048,7 @@ template {
     line-height: 24px; */
     display: flex;
     margin: 0;
+    padding: 0;
 }
 /* .footer_link>span{
     margin: 0 24px;
@@ -1068,11 +1069,12 @@ template {
         margin: 0;
     }
 } */
-.footer_link>dt{
+.footer_link>li{
     margin: 0 24px;
+    list-style: none;
 }
 @media (min-width:767px) and (max-width:1025px){
-    .footer_link>dt{
+    .footer_link>li{
         margin: 0 12px;
     }
 }
@@ -1081,7 +1083,7 @@ template {
         /* display: flex; */
         flex-direction: column;
     }
-    .footer_link>dt{
+    .footer_link>li{
         font-size: 18px;
         line-height: 48px;
         margin: 0;
