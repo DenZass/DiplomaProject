@@ -13,6 +13,9 @@
     background-color: #fff;
     font-weight: 500;
 }
+.button__showmore:hover{
+    opacity: 0.7;
+}
 
 @media (min-width:767px) and (max-width:1025px){
     .resultsearch__button{

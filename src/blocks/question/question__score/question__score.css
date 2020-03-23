@@ -6,7 +6,7 @@
     line-height: 24px;
 }
 .question__score p span{
-    font-family: 'roboto-bold';
+    font-family: 'roboto-bold', sans-serif, Arial;
     /* font-weight: bold; */
 }
 @media (min-width:767px) and (max-width:1025px){

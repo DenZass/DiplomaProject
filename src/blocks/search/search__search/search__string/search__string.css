@@ -8,9 +8,14 @@
     backdrop-filter: blur(8px);
     padding-left: 26px;
 }
+.string__input:focus{
+    outline: none;
+    /* box-shadow: 0px 2px #2F71E5, 0 -2px #2F71E5, -3px 0 #2F71E5; */
+    box-shadow: 0px 1px yellow, 0 -1px yellow, -1px 0 yellow;
+}
 .string__button{
     position: relative;
-    /* top: -1px; */
+    top: 1px;
     right: 95px;
     width: 168px;
     height: 67px;
@@ -19,7 +24,9 @@
     color: #ffffff;
     background: #2F71E5;
     letter-spacing: 1px;
-    
+}
+.string__button:hover{
+    background: #347EFF;
 }
 @media (min-width:767px) and (max-width:1025px){
     .string__input{

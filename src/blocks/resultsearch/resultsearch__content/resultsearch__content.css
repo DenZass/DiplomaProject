@@ -4,30 +4,32 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: center; 
 }
 .content__card{
     position: relative;
-    width: 400px;
-    height: 576px;
+    width: 27.2vw;
+    /* max-width: 400px; */
+    padding-bottom: 54px;
+    /* height: 576px; */
     border-radius: 20px;
     background-color: #fff;
-    margin-top: 16px;
+    margin: 16px 7px 0 7px;
 }
 .card__image{
     width: 100%;
-    height: 270px;
+    height: 18.7vw;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 .card__text{
-    padding: 20px 24px 24px 24px;
+    padding: 20px 24px 0px 24px;
 }
 .text__date{
     font-size: 18px;
     line-height: 24px;
     color: #B6BCBF;
-    font-family: 'sourcesanspro-regular';
+    font-family: 'sourcesanspro-regular', sans-serif, Arial;
 }
 .text__title{
     font-size: 26px;
@@ -48,21 +50,42 @@
     font-size: 16px;
     line-height: 20px;
     color: #B6BCBF;
-    font-family: 'robotoslab-regular';
+    font-family: 'robotoslab-regular', sans-serif, Arial;
 }
-@media (min-width:767px) and (max-width:1025px){
-    .resultsearch__content{
-        justify-content: space-around; 
-    }
+@media (min-width:1442px){
     .content__card{
-        width: 224px;
-        height: 420px;
+        width: 400px;
     }
     .card__image{
-        height: 150px;
+        height: 272px;
+    }
+}
+
+/* @media (min-width:767px) and (max-width:1025px){ */
+    @media (min-width:767px) and (max-width:1025px){
+    .resultsearch__content{
+        justify-content: center; 
+    }
+    .content__card{
+        /* width: 224px; */
+        width: 28.4vw;
+        margin: 16px 4px 0 4px;
+        /* height: 420px; */
+        padding-bottom: 48px;
+        /* height: 54.7vw; */
+        /* max-height: 470px; */
+
+        /* position: relative; */
+
+    }
+    .card__image{
+        /* height: 150px; */
+        height: 19.5vw;
     }
     .card__text{
         padding: 16px;
+        padding-bottom: 0;
+        /* position: relative; */
     }
     .text__title{
         font-size: 22px;
@@ -81,7 +104,8 @@
 @media (max-width:766px){
     .content__card{
         width: 288px;
-        height: 450px;
+        padding-bottom: 30px;
+        /* height: 450px; */
     } 
     .card__image{
         /* width: 288px; */

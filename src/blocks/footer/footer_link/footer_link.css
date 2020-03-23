@@ -4,8 +4,10 @@
     font-family: 'sourcesanspro-regular', sans-serif, Arial;
     /* font-size: 18px;
     line-height: 24px; */
+    display: flex;
+    margin: 0;
 }
-.footer_link>span{
+/* .footer_link>span{
     margin: 0 24px;
 }
 @media (min-width:767px) and (max-width:1025px){
@@ -19,6 +21,25 @@
         flex-direction: column;
     }
     .footer_link>span{
+        font-size: 18px;
+        line-height: 48px;
+        margin: 0;
+    }
+} */
+.footer_link>dd{
+    margin: 0 24px;
+}
+@media (min-width:767px) and (max-width:1025px){
+    .footer_link>dd{
+        margin: 0 12px;
+    }
+}
+@media (max-width:766px){
+    .footer_link{
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .footer_link>dd{
         font-size: 18px;
         line-height: 48px;
         margin: 0;
