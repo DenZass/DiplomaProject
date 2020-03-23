@@ -1068,11 +1068,11 @@ template {
         margin: 0;
     }
 } */
-.footer_link>dd{
+.footer_link>dt{
     margin: 0 24px;
 }
 @media (min-width:767px) and (max-width:1025px){
-    .footer_link>dd{
+    .footer_link>dt{
         margin: 0 12px;
     }
 }
@@ -1081,7 +1081,7 @@ template {
         /* display: flex; */
         flex-direction: column;
     }
-    .footer_link>dd{
+    .footer_link>dt{
         font-size: 18px;
         line-height: 48px;
         margin: 0;
