@@ -3,7 +3,7 @@
 .resultsearch__title{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding: 0 1.3vw 50px 1.3vw;
 } 
 .title__name{
     font-size: 40px;
