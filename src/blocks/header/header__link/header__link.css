@@ -1,0 +1,72 @@
+
+
+.header__link{
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    top: 33px;
+    right: 101px;
+}
+.header__link_analytics a{
+    color: #B6BCBF;
+    /* cursor: url('../../../image/Pointer.png'), pointer; */
+}
+.header__link_analytics a:hover{
+    color: #1A1B22;
+
+}
+.link__aboutproject_search>a{
+    color: #B6BCBF;
+    /* cursor: url('../../../image/Pointer.png'), pointer; */
+}
+.link__main{
+    margin-right: 34px;
+}
+.link__main_about a{
+    color: #B6BCBF;
+    /* cursor: url('../../../image/Pointer.png'), pointer; */
+}
+.header__line{
+    position: relative;
+    top: 23px;
+    width: 35%;
+    border: 1px solid ;
+}
+.header__line_aboutproject{
+    left: 110px;
+    width: 85px;
+}
+
+@media (min-width:767px) and (max-width:1025px){
+    .header__link{
+        top: 22px;
+        right: 42px;
+    }
+    .header__line{
+        top: 18px;
+    }
+    .header__line_aboutproject{
+        left: 115px;
+        width: 95px;
+    }
+} 
+@media (max-width:766px){
+    .header__link{
+        font-size: 16px;
+        line-height: 24px;
+        top: 18px;
+        right: 16px;
+        letter-spacing: normal;
+    }
+    .link__main{
+        margin-right: 8px;
+    }
+    .header__line{
+        width: 40%;
+        top: 14px;
+    }
+    .header__line_aboutproject{
+        width: 50%;
+        left: 73px;
+    }
+}

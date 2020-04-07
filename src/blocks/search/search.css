@@ -1,0 +1,32 @@
+
+@import url(./search__search/search__search.css);
+/* @import url(./search__image/search__image.css); */
+
+.search{
+    padding: 160px 0 0 0; 
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url(../../image/main-bg-phone.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+@media (min-width:767px) and (max-width:1025px){
+    .search{
+        padding: 104px 0 43px 0; 
+    }
+}
+@media (max-width:766px){
+    .search{
+        padding: 96px 0 32px 0;
+        background-image: url(../../image/georgia-average.png);
+    }
+}
+@media (max-width: 345px){
+    .search{
+        background-image: url(../../image/georgia-mini.png);
+    } 
+}

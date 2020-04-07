@@ -1,0 +1,26 @@
+
+.header__title{
+    position: relative;
+    top: 30px;
+    left: 104px;
+    font-family: 'robotoslab-regular', sans-serif, Arial;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px; 
+}
+
+@media (min-width:767px) and (max-width:1025px){
+    .header__title{
+        top: 22px;
+        left: 40px;
+    }
+} 
+@media (max-width:766px){
+    .header__title{
+        font-size: 16px;
+        line-height: 24px;
+        top: 16px;
+        left: 16px;
+    }
+}

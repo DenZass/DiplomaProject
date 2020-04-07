@@ -1,0 +1,14 @@
+@import url(./header/header.css);
+@import url(./search/search.css); 
+@import url(./resultsearch/resultsearch.css);
+@import url(./aboutauthor/aboutauthor.css);
+@import url(./footer/footer.css);
+/* about */
+@import url(./forcustomers/forcustomers.css);
+@import url(./technologies/technologies.css);
+@import url(./historycommit/historycommit.css);
+/* analytics */
+@import url(./question/question.css);
+@import url(./analyticsday/analyticsday.css);
+@import url();
+@import url();

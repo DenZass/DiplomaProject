@@ -1,0 +1,30 @@
+
+/* точки */
+.historycommit__points{
+    padding-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+.historycommit__points div{
+    width: 8px;
+    height: 8px;
+    margin: 0 8px;
+    background-color: #1A1B22;
+    border-radius: 100%;
+}
+.historycommit__points div:first-of-type{
+    background-color: #D1D2D6;
+}
+.historycommit__points div:last-of-type{
+    background-color: #D1D2D6;
+}
+@media (min-width:767px) and (max-width:1025px){
+    .historycommit__points{
+        padding-top: 32px;
+    }
+}
+@media (max-width:766px){
+    .historycommit__points{
+        padding: 16px 0 24px 0; 
+    }
+}

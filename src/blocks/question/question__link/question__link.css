@@ -1,0 +1,13 @@
+
+
+.question__link{
+    color: #B6BCBF;
+}
+@media (min-width:767px) and (max-width:1025px){
+    
+}
+@media (max-width:766px){
+    .question__link{
+        display: none;
+    }
+}

@@ -1,0 +1,19 @@
+
+
+.image__author{
+    border-radius: 100%;
+    margin-right: 56px; 
+}
+
+@media (min-width:767px) and (max-width:1025px){
+    .image__author{
+        width: 232px;
+        margin-right: 32px;
+    }
+}
+@media (max-width:766px){
+    .image__author{
+        width: 288px;
+        margin-right: 0;
+    }
+}

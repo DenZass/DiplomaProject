@@ -1,0 +1,21 @@
+
+
+@import url(./analyticsday__title/analyticsday__title.css);
+@import url(./analyticsday__analytics/analyticsday__analytics.css);
+
+
+.analyticsday{ 
+    padding: 80px 100px 100px 104px;
+    background-color: #F5F6F7;
+}
+@media (min-width:767px) and (max-width:1025px){
+    .analyticsday{
+        padding: 40px;
+    }
+}
+@media (max-width:766px){
+    .analyticsday{
+        padding: 24px 16px 38px 16px;
+    }
+}
+

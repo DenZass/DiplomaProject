@@ -1,0 +1,29 @@
+
+
+.historycommit__title{
+    padding: 72px 110px 64px 104px;
+}
+.title__view-analytics_historycommit{
+    position: relative;
+    top: 5px;
+}
+@media (min-width:767px) and (max-width:1025px){
+    .historycommit__title{
+        padding: 40px 60px 32px 40px;
+    }
+    .title__name_historycommit{
+        width: 336px;
+    }
+    .title__view-analytics_historycommit{
+        top: 3px;
+    }
+}
+@media (max-width:766px){
+    .historycommit__title{
+        padding: 0;
+    }
+    .title__view-analytics_historycommit{
+        display: none;
+    }
+
+}

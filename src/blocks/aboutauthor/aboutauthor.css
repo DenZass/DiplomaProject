@@ -1,0 +1,23 @@
+
+
+@import url(./aboutauthor__image/aboutauthor__image.css);
+@import url(./aboutauthor__textcontent/aboutauthor__textcontent.css);
+@import url();
+
+.aboutauthor{
+    padding: 80px 50px 80px 104px;
+    display: flex;
+}
+
+@media (min-width:767px) and (max-width:1025px){
+    .aboutauthor{
+        padding: 40px 40px 60px 40px;
+    }
+}
+@media (max-width:766px){
+    .aboutauthor{
+        display: flex;
+        flex-direction: column;
+        padding: 32px 16px 44px 16px;
+    }
+}

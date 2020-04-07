@@ -1,0 +1,48 @@
+
+
+.aboutauthor__textcontent{
+    width: 600px;
+}
+.textcontent__title{
+    font-size: 40px;
+    line-height: 46px;
+    margin: 51px 0 0 0;
+}
+.textcontent__subtitle{
+    font-size: 18px;
+    line-height: 24px;
+    margin: 24px 0 0 0; 
+}
+
+@media (min-width:767px) and (max-width:1025px){
+    .aboutauthor__textcontent{
+        width: 65%;
+    }
+    .textcontent__title{
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0 0 16px 0;
+    }
+    .textcontent__subtitle{
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0; 
+    }
+}
+@media (max-width:766px){
+   .aboutauthor__textcontent{
+       width: auto;
+    }
+   .textcontent__title{
+    font-size: 30px;
+    line-height: 40px;
+    margin: 24px 0 0 0;
+    }
+    .textcontent__subtitle{
+        margin: 0;
+    }
+    .textcontent__subtitle:first-of-type{
+        margin-top: 16px;
+    }
+
+}

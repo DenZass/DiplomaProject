@@ -1,0 +1,25 @@
+
+
+.search__subtitle{
+    width: 550px;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 32px 0 64px 0;
+}
+
+@media (min-width:767px) and (max-width:1025px){
+    .search__subtitle{
+        width: 452px;
+        margin: 16px 0 24px 0;
+    }
+}
+@media (max-width:766px){
+    .search__subtitle{
+        width: auto;
+        font-size: 20px;
+        line-height: 26px;
+        margin: 56px 0 24px 0;
+    }
+}
+
+

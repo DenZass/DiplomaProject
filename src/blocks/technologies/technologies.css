@@ -1,0 +1,27 @@
+
+
+@import url(./technologies__title/technologies__title.css);
+@import url(./technologies__content/technologies__content.css);
+@import url();
+
+
+.technologies{
+    padding: 0 0 0 104px;
+    height: 334px;
+    background-color: #F5F6F7;
+    display: flex;
+}
+@media (min-width:767px) and (max-width:1025px){
+    .technologies{
+        padding: 40px 0 0 0px;
+        display: block;
+    }
+}
+@media (max-width:766px){
+    .technologies{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 32px 16px 16px 16px;
+    }
+}
