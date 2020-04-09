@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Анализатор новостей">
     <meta name="author" content="Загородний Даниил">
-    <link rel="stylesheet" href="style.37fe9f17fc67d848fbfc.css?eb3ee1618433c96ba101">
+    <link rel="stylesheet" href="style.8d8c226df4997a0072b2.css?5c602f8c050d4436ca14">
     <link rel="icon" href="./image/favi1.png" type="image/x-icon">
     <title>NewsAnalyzer</title>
 </head>
 <body>
+    <i class="preloader"></i>
     <div class="root">
+
         <div class="header">
             <span class="header__title">NewsAnalyzer</span>
             <div class="header__link">  
@@ -26,14 +28,25 @@
             <div class="search__search">
                 <h1 class="search__title">Что в мире творится?</h1>
                 <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+                
+                <div class="error"></div>
+                
                 <form class="search__string" name="form__search">
-                    <input class="string__input" name="search__input" type="text" minlength="2" placeholder="Природа" required="required" >
-                    <button class="string__button" name="search__button">Искать</button>
+                    <input class="string__input" name="search__input" type="text" minlength="2" maxlength="36" placeholder="Природа" required="required" >
+                    <button class="string__button" name="search__button" disabled>Искать</button>
                 </form>
             </div>
         </div>
+                    <!-- circle-preloader  nothing__found_active-->
+        <section class="nothing__found ">
+            <div class="nothing__found-content">
+                <img class="found-content__image " src="./image/not-found_v1.svg" alt="Грустный смайлик :(">
+                <h3 class="found-content__title text__title">Ничего не найдено</h3>
+                <p class="found-content__subtitle text__subtitle">К сожалению по вашему запросу ничего не найдено.</p>
+            </div>
+        </section>
 
-        <section class="resultsearch">
+        <section class="resultsearch__dn">
             <div class="resultsearch__title">
                 <h3 class="title__name">Результаты поиска</h3>
                 <a class="title__view-analytics" href="./analytics.html">Посмотреть аналитику   <span>&#8250;</span></a>
@@ -78,8 +91,8 @@
                     <span class="text__source">Дзен</span>
                 </div> -->
             </div>
-
-            <div class="resultsearch__button">
+                                    
+            <div class="resultsearch__button ">
                 <button class="button__showmore">Показать еще</button>
             </div>
         </section>
@@ -112,7 +125,7 @@
     </div>
     
 
-    <script src="main.3b4ab3ea09ab920b2fe8.js?eb3ee1618433c96ba101"></script>
+    <script src="main.29a80225d572d279d654.js?5c602f8c050d4436ca14"></script>
 
 </body>
 </html>

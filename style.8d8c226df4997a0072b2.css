@@ -1103,6 +1103,62 @@ button.swiper-pagination-bullet {
 
 
 
+.error{
+    display: none;
+}
+.error_active{
+    color: #1A1B22;
+    display: block;
+    position: absolute;
+    bottom: 145px;
+    left: 21.8vw;
+    width: 270px;
+    /* height: 70px; */
+    background-color: #fff;
+    border: 1px solid brown ;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 10px -10px;
+}
+@media (min-width:1050px) {
+    /* .error_active{
+        position: static;
+    } */
+}
+@media (max-width:960px) {
+    /* .error_active{
+        position: static;
+    } */
+}
+@media (max-width:766px) {
+    .error_active{
+        /* position: static; */
+        position: absolute;
+        bottom: 164px;
+        left: calc(50vw-135px);
+        /* left: calc(80%-14vw); */
+
+    }
+}
+ @media (max-width:550px) {
+    .error_active{
+        /* position: static; */
+        position: absolute;
+        bottom: 164px;
+        left: 15vw;
+
+     }
+} 
+@media (max-width:420px) {
+    .error_active{
+        /* position: static; */
+        position: absolute;
+        bottom: 164px;
+        left: 5vw;
+
+     }
+} 
+
 
 .string__input{
     width: 500px;
@@ -1132,7 +1188,15 @@ button.swiper-pagination-bullet {
 .string__button:hover{
     background: #347EFF;
 }
+.string__button_active{
+    background: #2A65CC;
+}
+
 @media (min-width:767px) and (max-width:1025px){
+    .error_active{
+        bottom: 105px;
+        left: 22.8vw;
+    }
     .string__input{
         width: 350px;
         height: 56px;
@@ -1190,6 +1254,7 @@ button.swiper-pagination-bullet {
 /* @import url(./search__image/search__image.css); */
 
 .search{
+    /* display: block; */
     padding: 160px 0 0 0; 
     color: #ffffff;
     display: flex;
@@ -1408,9 +1473,13 @@ button.swiper-pagination-bullet {
 
 
 .resultsearch__button{
+    display: block;
     padding: 64px 0 80px 0;
     display: flex;
     justify-content: center;
+}
+.resultsearch__button_dn{
+    display: none;
 }
 .button__showmore{
     width: 288px;
@@ -1447,8 +1516,11 @@ button.swiper-pagination-bullet {
 @import url();
 @import url();
 
-
+.resultsearch__dn{
+    display: none;
+}
 .resultsearch{
+    display: block;
     background-color: #F5F6F7;
     padding: 80px 5.8vw 0 5.8vw;
 } 
@@ -1469,6 +1541,33 @@ button.swiper-pagination-bullet {
 }
 
 
+
+
+.nothing__found{
+    display: none;
+}
+.nothing__found_active{
+    display: block;
+    display: flex;
+    justify-content: center;
+    background-color: #F5F6F7;
+}
+.nothing__found-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 85px 0  15px 0;
+}
+.found-content__title{
+    margin: 0;
+    padding: 30px 0 20px 0;
+}
+.found-content__subtitle{
+    text-align: center;
+    color: #B6BCBF;
+    width: 270px;
+    margin: 0;
+}
 
 
 .image__author{
@@ -1812,7 +1911,7 @@ button.swiper-pagination-bullet {
 
 
 .historycommit__content{
-    /* padding: 0 50px; */
+    padding: 0;
     display: flex;
     justify-content: center;
 }
@@ -1826,6 +1925,7 @@ button.swiper-pagination-bullet {
 
 /* карточка */
 .content__card_historycommit{
+    width: 288px;
     max-height: 288px;
     margin: 0 8px;
     padding-bottom: 0;
@@ -1845,6 +1945,9 @@ button.swiper-pagination-bullet {
 .title__email{
     font-size: 14px;
     line-height: 22px;
+}
+.text__subtitle_historycommit{
+    height: 70px;
 }
 /* @media (min-width:767px) and (max-width:1025px){
     .historycommit__content{
@@ -1877,14 +1980,15 @@ button.swiper-pagination-bullet {
     }
 }*/
 @media (max-width:766px){ 
-    .historycommit__content{
+    /* .historycommit__content{
         padding: 0;
-    }
-    /* .content__card_historycommit{
-        height: 264px;
-        margin: 0;
-    }
-    .content__card_historycommit:first-of-type{
+    } */
+    .content__card_historycommit{
+        max-width: 288px; 
+        /* height: 264px; 
+        margin: 0; */
+   }
+    /*.content__card_historycommit:first-of-type{
         display: none;
     }
     .content__card_historycommit:last-of-type{
@@ -1911,6 +2015,14 @@ button.swiper-pagination-bullet {
         line-height: 30px;
     } */
 } 
+/* @media (max-width: 350px){
+    .content__card_historycommit{
+         min-width: 269px; 
+         /* height: 264px; 
+         margin: 0; */
+    /* }
+}   */
+
 
 /* точки */
 .historycommit__points{
@@ -1953,6 +2065,7 @@ button.swiper-pagination-bullet {
 }
 @media (max-width:766px){
     .historycommit__button{
+        padding-top: 25px;
         display: block;
         width: 100%;
         display: flex;
@@ -2124,6 +2237,7 @@ button.swiper-pagination-bullet {
     .block__indicator{
     /* position: relative; */
     width: 50%;
+    min-width: 24px;
     height: 24px;
     background-color: #2F71E5;
     display: flex;
@@ -2186,4 +2300,50 @@ button.swiper-pagination-bullet {
 /* analytics */
 @import url();
 @import url();
+
+
+.preloader {
+	display: none;
+}
+.body__for-preloader{
+	background-color: #333;	
+	overflow: hidden;
+}
+
+.root__for-preloader {
+	z-index: 0;
+	margin: 0;
+	height: 100vh;
+	background-color: #333;
+	
+	/* overflow: hidden; */
+	opacity: 0.05;
+	transition: opacity 0.2s linear 0s;
+}
+
+.circle-preloader {
+	z-index: 1;
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: 4px solid #444;
+	border-bottom-color: #888;
+	
+	border-radius: 50%;
+	
+	position: absolute;
+	top: calc(50%-50vh);
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	
+	animation: spin .75s infinite linear;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
 body{display:flex;justify-content:center}.root{position:relative;width:100%;max-width:1440px;color:#1a1b22;font-family:roboto-regular,sans-serif,Arial;letter-spacing:.2px}h1,h3,h4{font-family:robotoslab-regular,sans-serif,Arial}a{color:#1a1b22;text-decoration:none}a,button{cursor:url(./image/lapka.svg),pointer}button{font-size:18px;line-height:24px;font-family:roboto-bold,sans-serif,Arial}
