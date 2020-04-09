@@ -1984,7 +1984,7 @@ button.swiper-pagination-bullet {
         padding: 0;
     } */
     .content__card_historycommit{
-        max-width: 288px; 
+        max-width: 280px; 
         /* height: 264px; 
         margin: 0; */
    }
@@ -2015,13 +2015,13 @@ button.swiper-pagination-bullet {
         line-height: 30px;
     } */
 } 
-/* @media (max-width: 350px){
+@media (max-width: 321px){
     .content__card_historycommit{
-         min-width: 269px; 
-         /* height: 264px; 
-         margin: 0; */
-    /* }
-}   */
+         min-width: 265px; 
+          /* height: 264px; 
+         margin: 0;  */
+ }
+}
 
 
 /* точки */
