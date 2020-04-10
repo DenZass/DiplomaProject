@@ -61,6 +61,7 @@
     .block__indicator{
     /* position: relative; */
     width: 50%;
+    min-width: 24px;
     height: 24px;
     background-color: #2F71E5;
     display: flex;

@@ -1,25 +1,31 @@
 
 
 .historycommit__content{
-    padding: 0 50px;
+    padding: 0;
     display: flex;
     justify-content: center;
 }
 
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+}
+
 /* карточка */
 .content__card_historycommit{
+    width: 288px;
     max-height: 288px;
     margin: 0 8px;
+    padding-bottom: 0;
 }
 .text__box{
     padding: 16px 0;
     display: flex;
     align-items: center;
 }
-/* .box__image{
-    width: 64px;
-    height: 64px;
-} */
+
 .box__title{
     margin-left: 16px;
 }
@@ -30,7 +36,10 @@
     font-size: 14px;
     line-height: 22px;
 }
-@media (min-width:767px) and (max-width:1025px){
+.text__subtitle_historycommit{
+    height: 70px;
+}
+/* @media (min-width:767px) and (max-width:1025px){
     .historycommit__content{
         padding: 0 40px;
         justify-content: center;
@@ -59,18 +68,17 @@
         font-size: 20px;
         line-height: 30px;
     }
-}
-@media (max-width:766px){
-    .historycommit__content{
-        /* width: 288px; */
-        /* height: 264px; */
+}*/
+@media (max-width:766px){ 
+    /* .historycommit__content{
         padding: 0;
-    }
+    } */
     .content__card_historycommit{
-        height: 264px;
-        margin: 0;
-    }
-    .content__card_historycommit:first-of-type{
+        max-width: 280px; 
+        /* height: 264px; 
+        margin: 0; */
+   }
+    /*.content__card_historycommit:first-of-type{
         display: none;
     }
     .content__card_historycommit:last-of-type{
@@ -95,5 +103,12 @@
     .title__header{
         font-size: 20px;
         line-height: 30px;
-    }
+    } */
+} 
+@media (max-width: 321px){
+    .content__card_historycommit{
+         min-width: 265px; 
+          /* height: 264px; 
+         margin: 0;  */
+ }
 }

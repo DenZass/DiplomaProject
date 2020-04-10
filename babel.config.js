@@ -6,6 +6,7 @@ const presets = [
                 edge: "17",
                 firefox: "60",
                 chrome: "64",
+                chrome: "mobile",
                 safari: "11.1",
             },
             useBuiltIns: "usage", // эта настройка babel-polyfill, если стоит значение usage, то будут подставлятся полифилы для версий браузеров которые указали выше.
