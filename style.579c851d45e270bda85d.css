@@ -1587,7 +1587,7 @@ button.swiper-pagination-bullet {
 .error__active{
     display: block;
     background-color: #F5F6F7;
-    animation: opacity_style 3s linear 2s;
+    animation: opacity_style 7s linear 8s;
 }
 .error__content{
     display: flex;
@@ -1602,8 +1602,18 @@ button.swiper-pagination-bullet {
     margin: 0;
     /* font-weight: bold; */
 }
+.error_indicator{
+    width: 230px;
+    text-align: center;
+    /* word-break: break-all; */
+}
 .error__subtitle{
     color: #888;
+}
+@media (max-width:766px){
+    .error__title{
+        font-size: 85px;
+    }
 }
 
 
