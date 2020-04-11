@@ -27,7 +27,7 @@ export class NewCardList {
       resultsearchСontent.appendChild(card.element)
     }
     
-    out(arr){
+    out(arr){      
       const self = this;
       for (let i = count; i < arr.length; i++) {
           arr[i].forEach((el)=>{
@@ -53,18 +53,3 @@ export class NewCardList {
 } 
 
 
-
-
-
-//   console.log(NewCard);
-// function addCardAll(params) {
-//   params.forEach(element => {
-//        console.log(element);
-       
-//        const card = new NewCard(element);
-//        console.log(card.element);
-
-//        resultsearchСontent.appendChild(card.element)
-//    });
-// }
-// addCardAll(arr2);

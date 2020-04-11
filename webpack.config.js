@@ -13,16 +13,16 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
     },
-    // resolve: {
-    //     alias: {
-         
-    //       img: __dirname+"./src/images",
-
-    //     },
-    //         extensions:[".js"]
-    //   },
+    devtool: 'sourse-map',
+   
     module: {
-        rules: [{
+        rules: [
+            {
+                test: /\.js$/,
+                use: ["source-map-loader"],
+                enforce: "pre"
+              },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
@@ -40,65 +40,16 @@ module.exports = {
                   options:{
                     name: "[name].[ext]",
                     publicPath: './image/',
-                    // path: path.resolve(__dirname, 'src/image/'),
                     outputPath: './image'
-                    // useRelativePath: true
 
                   }
                 }]
               },
-            // {
-            //     test: /\.(png|jpe?g|gif)$/i,
-            //     use: [{
-            //         loader: 'file-loader',
-            //     }, ],
-            // },
-            // {
-            //     test: /\.(png|jpg)$/,
-            //     loader: 'url-loader',
-            //     options:{
-            //         // exclude: __dirname + "/../src/vendors",
-            //         // limit:4096,
-            //         name: "[path][name].[ext]",
-            //         fallback: "file-loader"
-            //       }
-            //   },
+          
 
 
 
 
-            // {
-            //     test: /\.(png|jpg|gif|ico|svg)$/, 
-            //          // 
-            //     use: [
-            //         'file-loader', 
-            //         //  'url-loader',
-            //         {
-            //             loader: 'image-webpack-loader',
-            //             options: {
-            //                 // outputPath: 'image',
-            //                 bypassOnDebug: true,  
-            //                 disable: true, 
-            //             },
-            //         },
-            //     ],
-            // },
-
-
-
-
-
-
-            // {
-            //     test: /\.(png|jpg|gif|ico|svg)$/,
-            //     use: [
-            //             'file-loader?name=../images/[name].[ext]', 
-            //             {
-            //                 loader: 'image-webpack-loader',
-            //                 options: {}
-            //             },
-            //     ]
-            // },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
                 loader: 'file-loader?name=./vendor/[name].[ext]'

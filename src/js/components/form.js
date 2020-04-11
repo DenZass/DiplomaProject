@@ -12,17 +12,28 @@ const textNormal = 'Не меньше 2-х, и не больше 34-х симв�
 const textMany = 'Запрос должен быть не больше 34-х символов. Сейчас - ';
 
 
-function buttonActive(){
+let qestion = 'автомобиль';
+
+
+export function buttonActive(){
     formButton.classList.add('string__button_active');
-    formButton.removeAttribute('disabled');
+    formButton.removeAttribute('disabled', true);
     formButton.addEventListener('click', launchSearch);
     formButton.addEventListener('touchstart', launchSearch);
 }
-function buttonFrozen(){
+export function buttonFrozen(){
     formButton.classList.remove('string__button_active');
     formButton.setAttribute('disabled', true);
     formButton.removeEventListener('click', launchSearch);
     formButton.removeEventListener('touchstart', launchSearch);
+}
+export function formActive(){
+    formInput.removeAttribute('disabled', true);
+    buttonActive();
+}
+export function formFrozen(){
+    formInput.setAttribute('disabled', true);
+    buttonFrozen();
 }
 
 function whitespaces(){
@@ -52,8 +63,8 @@ function simbolNorm(){
 function simbolMany(){
     errorWindow.textContent = textMany + formInput.value.length;
 }
-
-form.addEventListener('input', ()=>{
+//обработчик ввода
+function handlerInput(){
     if( formInput.value.length >= 2 &&
         formInput.value.length <= 34){
             buttonActive();
@@ -74,5 +85,7 @@ form.addEventListener('input', ()=>{
     if (formInput.value == ' ') {
         buttonFrozen();
     }
-})
+}
+
+form.addEventListener('input', handlerInput);
 

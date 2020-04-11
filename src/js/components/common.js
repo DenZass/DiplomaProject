@@ -5,7 +5,14 @@ import {arr} from './components.js';
 import {arr2} from './components.js';
 import { NewCard, countShowCards } from './NewCard.js';
 import { storage, sliced_array } from './DataStorage.js';
-import {formInput, formButton, form,setInputFormValue } from './form.js';
+import {
+    formInput, 
+    formButton, 
+    form, 
+    formActive,
+    formFrozen,
+    buttonFrozen  
+        } from './form.js';
 
 const buttonShowmore = document.querySelector('.button__showmore');
 const cardList = new NewCardList;
@@ -17,10 +24,13 @@ const root = document.querySelector('.root');
 const body = document.body
 const resultsearchBlock = document.querySelector('.resultsearch__dn');
 const nothingFound = document.querySelector('.nothing__found');
+////блок ошибки
+const errorBlockAnswerApi = document.querySelector('.error-api');
+const errorCodeValue =  document.querySelector('.error_code');
 
 const buttonSearch = document.querySelector('.string__button');
-// let qestion = 'автомобиль';
-// let qestion1 = ' ';
+let qestion = 'автомобиль';
+let qestion1 = ' ';
 // let qestion2 = 'фф ';
 // let qestion3 = '. ';
 
@@ -56,19 +66,36 @@ function resultsearchBlockOn(){
     resultsearchBlock.classList.add('resultsearch');
     nothingFound.classList.remove('nothing__found_active');
 }
+///закрыть блок ошибки
+function errorBlockClose() { 
+    errorBlockAnswerApi.classList.remove('error__active');
+}
+///открыть блок ошибки
+function errorBlockActive(data) {
+    console.log(errorBlockAnswerApi);
+    errorBlockAnswerApi.classList.add('error__active');
+    resultsearchBlock.classList.remove('resultsearch');
+    errorCodeValue.textContent = `${data}`;
+    setTimeout(errorBlockClose, 15000);
+    ///// снимаем прелоадер
+    stopPreloader(); 
+}
+
 
 export function launchSearch(){
     event.preventDefault();
-    localStorage.clear();
+    ///отключить форму
+    formFrozen();
     ///запуск прелоадер
     runPreloader();
+    //чистим сторадж
+    localStorage.clear();
     /////чистим рабочий массив 
     storage.slicedArrayNull();
-    ////////кидаем инпут в сторадж
-    storage.insertStorageInput(formInput.value);
     //////////удаление карточек
     deliteCards();
     //////////// делаем запрос к апи
+    // const newsApi = new NewsApi(qestion1);
     const newsApi = new NewsApi(formInput.value);
     newsApi.getCard()
         .then((res)=>{
@@ -77,14 +104,18 @@ export function launchSearch(){
                 ////закрывае результаты поиска
                 resultsearchBlockClose();
                 console.log('пустой');
+                formActive();
+                buttonFrozen();
                 ///// снимаем прелоадер
                 stopPreloader();
                 return
             }
             //////открываем результаты поиска
             resultsearchBlockOn();
-            /////закидываем в сторадж
+            /////закидываем массив в сторадж
             storage.insertStorage(res.articles);
+                ////////кидаем инпут в сторадж
+            storage.insertStorageInput(formInput.value);
             ///// подключаем отображение карточек
             const cardList = new NewCardList(storage.pullOutStorsge()); 
             //////пилим полученный массив 
@@ -92,18 +123,30 @@ export function launchSearch(){
             ////// вставляем карточки
             cardList.out(sliced_array);
             ///// снимаем прелоадер
-            stopPreloader();            
+            stopPreloader();   
+            ////включаем форму
+            formActive();
+            buttonFrozen();                     
         })
+        .catch((err) => {
+            errorBlockActive(err);
+            console.log(`Ошибка ${err}`);
+            formActive();
+            buttonFrozen();
+          });
 }
 
 //// отображение карточек 
 if(storage.pullOutStorsge() == null){
     console.log(' null ');
+    buttonFrozen();
     
 } else {
+    formInput.value = storage.pullOutStorsgeInput();
     resultsearchBlockOn();
     storage.sliced(storage.pullOutStorsge());
     cardList.out(sliced_array);
+    buttonFrozen();
 }
 
 //////кнопка показать еще для компа

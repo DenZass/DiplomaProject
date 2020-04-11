@@ -2,6 +2,7 @@
 @import url(./search/search.css); 
 @import url(./resultsearch/resultsearch.css);
 @import url(./nothingfound/nothingfound.css);
+@import url(./error/error.css); 
 @import url(./aboutauthor/aboutauthor.css);
 @import url(./footer/footer.css);
 /* about */

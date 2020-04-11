@@ -24,9 +24,9 @@ export class NewsApi {
                         }
                     return Promise.reject(res.status)
                     })
-                    .catch((err) => {
-                        console.log(`Ошибка ${err}`);
-                      });
+                    // .catch((err) => {
+                    //     console.log(`Ошибка ${err}`);
+                    //   });
     }
 }     
 
