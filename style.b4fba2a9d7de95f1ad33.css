@@ -1568,6 +1568,43 @@ button.swiper-pagination-bullet {
     width: 270px;
     margin: 0;
 }
+.error-api{
+    display: none;
+}
+
+@keyframes opacity_style {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0,5;
+    }
+    100%{
+        opacity: 0;
+
+    }
+  }
+.error__active{
+    display: block;
+    background-color: #F5F6F7;
+    animation: opacity_style 3s linear 2s;
+}
+.error__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 85px 0  15px 0;
+}
+
+.error__title{
+    font-size: 100px;
+    font-family: 'roboto-bold';
+    margin: 0;
+    /* font-weight: bold; */
+}
+.error__subtitle{
+    color: #888;
+}
 
 
 .image__author{
