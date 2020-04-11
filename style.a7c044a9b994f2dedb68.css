@@ -1600,12 +1600,10 @@ button.swiper-pagination-bullet {
     font-size: 100px;
     font-family: 'roboto-bold';
     margin: 0;
-    /* font-weight: bold; */
 }
 .error_indicator{
     width: 230px;
     text-align: center;
-    /* word-break: break-all; */
 }
 .error__subtitle{
     color: #888;
