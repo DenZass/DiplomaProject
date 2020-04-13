@@ -1616,6 +1616,7 @@ button.swiper-pagination-bullet {
 
 
 .image__author{
+    width: 464px;
     border-radius: 100%;
     margin-right: 56px; 
 }
@@ -2271,6 +2272,7 @@ button.swiper-pagination-bullet {
 }
 /* .sliders__item>span */
 .item__date{
+    width: 60px;
     padding-right: 90px;
     font-size: 18px;
     line-height: 80px;
