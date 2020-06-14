@@ -10,6 +10,7 @@
 }
 @media (max-width:766px){
     .historycommit__button{
+        padding-top: 25px;
         display: block;
         width: 100%;
         display: flex;

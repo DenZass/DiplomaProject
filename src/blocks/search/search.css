@@ -3,6 +3,7 @@
 /* @import url(./search__image/search__image.css); */
 
 .search{
+    /* display: block; */
     padding: 160px 0 0 0; 
     color: #ffffff;
     display: flex;

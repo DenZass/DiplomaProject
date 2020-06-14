@@ -10,7 +10,9 @@
     <title>NewsAnalyzer</title>
 </head>
 <body>
+    <i class="preloader"></i>
     <div class="root">
+
         <div class="header">
             <span class="header__title">NewsAnalyzer</span>
             <div class="header__link">  
@@ -26,22 +28,42 @@
             <div class="search__search">
                 <h1 class="search__title">Что в мире творится?</h1>
                 <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-                <form class="search__string">
-                    <input class="string__input" type="text" minlength="5" placeholder="Природа" required="required" >
-                    <button class="string__button">Искать</button>
+                
+                <div class="error"></div>
+                <!-- disabled -->
+                <form class="search__string" name="form__search" >
+                    <input class="string__input" name="search__input" type="text" minlength="2" maxlength="36" placeholder="Природа" required="required" >
+                    <!-- disabled -->
+                    <button class="string__button" name="search__button" >Искать</button>
                 </form>
             </div>
         </div>
+                    <!-- nothing__found -->
+        <section class="error-api ">
+            <div class="error__content">
+                <!-- <img class="found-content__image " src="./image/not-found_v1.svg" alt="Грустный смайлик :("> -->
+                <h2 class="error__title">ERROR</h2>
+                <h3 class="found-content__title text__title error_indicator" >Oops! Ошибка: <span class="error_code">404<span></h3>
+                <p class="found-content__subtitle text__subtitle error__subtitle">Что-то пошло не так. Пожалуйста, повторите попытку позже.</p>
+            </div>
+        </section>
+                    <!-- circle-preloader  nothing__found_active-->
+        <section class="nothing__found ">
+            <div class="nothing__found-content">
+                <img class="found-content__image " src="./image/not-found_v1.svg" alt="Грустный смайлик :(">
+                <h3 class="found-content__title text__title">Ничего не найдено</h3>
+                <p class="found-content__subtitle text__subtitle">К сожалению по вашему запросу ничего не найдено.</p>
+            </div>
+        </section>
 
-        <section class="resultsearch">
+        <section class="resultsearch__dn">
             <div class="resultsearch__title">
                 <h3 class="title__name">Результаты поиска</h3>
                 <a class="title__view-analytics" href="./analytics.html">Посмотреть аналитику   <span>&#8250;</span></a>
             </div> 
 
             <div class="resultsearch__content ">
-                <div class="content__card">
-                    <!-- <div class="card__image"></div> -->
+                <!-- <div class="content__card">
                     <img src="./image/image_04.png" class="card__image" alt="Изображение из статьи">
                     <div class="card__text">
                         <span class="text__date">2 августа, 2019</span>
@@ -51,7 +73,6 @@
                     </div>
                 </div>
                 <div class="content__card">
-                    <!-- <div class="card__image"></div> -->
                     <img src="./image/image_04.png" class="card__image" alt="Изображение из статьи">
                     <div class="card__text">
                         <span class="text__date">2 августа, 2019</span>
@@ -61,7 +82,6 @@
                     </div>
                 </div>
                 <div class="content__card">
-                    <!-- <div class="card__image"></div> -->
                     <img src="./image/image_04.png" class="card__image" alt="Изображение из статьи">
                     <div class="card__text">
                         <span class="text__date">2 августа, 2019</span>
@@ -69,9 +89,8 @@
                         <p class="text__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
                         <span class="text__source">Дзен</span>
                     </div>
-                </div>
-                <div class="content__card">
-                    <!-- <div class="card__image"></div> -->
+                </div> -->
+                <!-- <div class="content__card">
                     <img src="./image/image_04.png" class="card__image" alt="Изображение из статьи">
                     <div class="card__text">
                         <span class="text__date">2 августа, 2019</span>
@@ -80,10 +99,10 @@
                         
                     </div>
                     <span class="text__source">Дзен</span>
-                </div>
+                </div> -->
             </div>
 
-            <div class="resultsearch__button">
+            <div class="resultsearch__button ">
                 <button class="button__showmore">Показать еще</button>
             </div>
         </section>

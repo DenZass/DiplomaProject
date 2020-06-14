@@ -1,9 +1,13 @@
 
 
 .resultsearch__button{
+    display: block;
     padding: 64px 0 80px 0;
     display: flex;
     justify-content: center;
+}
+.resultsearch__button_dn{
+    display: none;
 }
 .button__showmore{
     width: 288px;
